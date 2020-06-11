@@ -87,6 +87,7 @@ document.querySelector('.dice1').style.display= 'none';
            
             document.getElementById('name-'  +activeplayer).innerHTML= 'winner !!';
             document.querySelector('.player-'+ activeplayer).classList.remove('active');
+            document.querySelector('.player-1').classList.add ('pulse');
 
             gamePlaying=false;
             
@@ -114,6 +115,8 @@ function nextplayer(){
     document.querySelector('#current-1').textContent = 0;
     document.querySelector('#diceimg').style.display= 'none';
     document.querySelector('.dice1').style.display= 'none';
+    document.querySelector('.player-0').classList.toggle ('pulse');
+    document.querySelector('.player-1').classList.toggle ('pulse');
     
 
 }
