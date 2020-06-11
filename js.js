@@ -78,7 +78,7 @@ document.querySelector('.dice1').style.display= 'none';
             winnigscore =gamescore;
         }else{
 
-            winnigscore=100;
+            winnigscore = 100;
         }
 
         
@@ -87,7 +87,7 @@ document.querySelector('.dice1').style.display= 'none';
            
             document.getElementById('name-'  +activeplayer).innerHTML= 'winner !!';
             document.querySelector('.player-'+ activeplayer).classList.remove('active');
-            document.querySelector('.player-1').classList.add ('pulse');
+            document.querySelector('.player-'+ activeplayer).classList.add ('pulse');
 
             gamePlaying=false;
             
